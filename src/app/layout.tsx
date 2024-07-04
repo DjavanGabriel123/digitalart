@@ -1,0 +1,32 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/header/Header";
+import { MantineProvider } from "@mantine/core";
+import Footer from "@/components/footer/Footer";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "new frontier  art",
+  description:
+    "The forever home of long-form generative art. Create, collect, and connect today. Pioneering the digital art revolution, one hash and group chat at a time.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <MantineProvider>
+          <Header />
+          {children}
+          <Footer />
+        </MantineProvider>
+      </body>
+    </html>
+  );
+}
