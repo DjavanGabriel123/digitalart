@@ -50,7 +50,7 @@ export function SearchInput() {
         }
       }
     >
-      <Image src="/search.svg" alt="search" width={24} height={24} />
+      <Image src="/search.svg" alt="search" width={24} height={24} className="mt-2" />
     </ActionIcon>
   )
 
@@ -75,7 +75,7 @@ export function SearchInput() {
               border: "1px solid rgba(45, 45, 45, 1)",
               padding: "0 16px 0 16px",
               borderRadius: "40px",
-              backgroundColor: "rgba(28, 28, 28, 1)",
+              backgroundColor: "#fff",
               width: "100%",
               outline: "rgba(45, 45, 45, 1)"
             },
@@ -83,7 +83,7 @@ export function SearchInput() {
               color: "rgba(135, 135, 135, 1)",
               fontSize: "16px",
               width: "100%",
-              backgroundColor: "rgba(28, 28, 28, 1)",
+              backgroundColor: "#fff",
               outline: "none",
             },
           }

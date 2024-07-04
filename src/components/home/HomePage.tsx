@@ -6,7 +6,7 @@ export default function HomePage() {
     return (
         <div className="">
             <Hero />
-            <Input placeholder="Search" className="border-zinc-700	" />
+            <Input placeholder="Search" />
             <CardPrincipal />
         </div>
     )
